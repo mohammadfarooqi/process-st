@@ -1,0 +1,27 @@
+<!-- Create a file upload form with options passed in from your scope -->
+<form data-file-upload="options" enctype="multipart/form-data">
+  <!-- This button will trigger a file selection dialog -->
+  <span class="btn btn-success fileinput-button">
+    <span>Add files...</span>
+    <input type="file" name="file" id="inputFile">
+  </span>
+
+  <!-- This button will start the upload -->
+  <button type="button" class="btn btn-primary start" data-ng-click="submit()" ng-disabled="disabledbtn">
+    <span>Start upload</span>
+  </button>
+
+  <br>
+  <br>
+
+  <div class="progress" ng-show="isFileAdded">
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+      {{uploadPercentage}}%
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="player"></div>
+<form>
