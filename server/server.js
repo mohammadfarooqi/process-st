@@ -5,6 +5,7 @@ var app = express();
 require('./config/middleware.js')(app, express);
 require('./config/routes.js')(app, express);
 
+// setting port
 var port = process.env.PORT || 8000;
 
 // start listening to requests on port 8000 or process.env.port
