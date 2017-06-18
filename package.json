@@ -1,0 +1,21 @@
+{
+  "name": "process-st",
+  "version": "1.0.0",
+  "description": "An app that lets users upload to Wistia using the Blueimp File Upload plugin",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohammadfarooqi/process-st"
+  },
+  "author": "Mohammad Farooqi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  }
+}
