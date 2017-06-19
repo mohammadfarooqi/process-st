@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js',
+      // 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js',
       './node_modules/angular/angular.js',
       './node_modules/angular-mocks/angular-mocks.js',
       './client/vendor/jquery.ui.widget.js',
@@ -24,8 +24,7 @@ module.exports = function(config) {
       './client/js/jquery.fileupload-angular.js',
       './client/js/app.js',
       './client/js/wistiaUploadFileComponent.js',
-      './client/js/wistiaUploadFileComponent.spec.js',
-      './client/templates/wistia.html'
+      './client/js/wistiaUploadFileComponent.spec.js'
     ],
 
 
@@ -37,15 +36,9 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      './client/templates/wistia.html': ['ng-html2js']
     },
 
 
-    ngHtml2JsPreprocessor: {
-      // setting this option will create only a single module that contains templates
-      // from all the files, so you can load them all with module('foo')
-      moduleName: 'templates'
-    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
