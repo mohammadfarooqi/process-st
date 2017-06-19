@@ -14,6 +14,7 @@ https://process-st-mf.herokuapp.com
 ```
 > git clone https://github.com/mohammadfarooqi/process-st.git
 > cd process-st
+> npm install
 > npm start
 ```
 
