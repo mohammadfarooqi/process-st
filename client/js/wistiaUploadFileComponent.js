@@ -14,7 +14,7 @@ angular.module('wistiaApp').component('wistiaUploadFileComponent', {
       type: 'POST'
     };
 
-    //stop
+
     $scope.$on('fileuploaddone', function(e, data) {
       console.log('Uploads Finished');
       //console.log(data.result.hashed_id);
